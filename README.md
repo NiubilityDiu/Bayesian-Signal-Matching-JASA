@@ -1,7 +1,7 @@
 # JASA-A&CS Reproducibility Materials for "Bayesian Signal Matching  for Transfer Learning in ERP-Based Brain Computer Interface"
 
 ## Author
-Blinded during peering review
+Blinded during peering review.
 
 ## Overview
 
