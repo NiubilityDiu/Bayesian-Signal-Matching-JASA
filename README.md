@@ -35,6 +35,8 @@ In this study, codes are written in Python, R, and MATLAB. They are saved under 
 ### Data
 All relevant data are saved under `EEG_MATLAB_data` folder. This folder further contains three subfolders: `SIM_files` (simulation studies), `TRN_files` (training sets of real data analysis), and `FRT_files` (free-typing or testing sets of real data analysis).
 * For real data analysis, since the original participants in the study did not consent to release their data in public directly, even for the de-identified version, those files are only available upon request for the academic audiences. Therefore, no raw EEG datasets are available.
+  * The data dictionary (as well as experimental design) can be found in this paper [“A plug-and-play brain-computer interface to operate commercial assistive technology”](https://doi.org/10.3109/17483107.2013.785036).
+ 
   * K151 is the single participant we focus on in Section 5. Under `K151`, there are five subfolders:
     * `mixture_gibbs_letter_5_reduced_xdawn` (BSM-Mixture),
     * `borrow_gibbs_letter_5_reduced_xdawn` (BSM),
@@ -42,7 +44,19 @@ All relevant data are saved under `EEG_MATLAB_data` folder. This folder further 
     * `MDWM` (MDWM),
     * `swLDA` (swLDA).
   * Under `FRT_files`, there are two subfolders, `K151` and `Prediction`. The former one stores session-specific (`001_BCI_FRT`, `002_BCI_FRT`, `003_BCI_FRT`) prediction accuracy using each method, while the latter one stores the prediction accuracy combining sessions of all eight participants with neuromuscular diseases and brain injuries (shown in Figure 6).
-* For simulation studies, we provide part of information for naive single-, multi-channel, and real-data-based scenarios under (`N_7_K_3/N_7_K_3_option_1_sigma_3.0_rho_0.6`, `N_7_K_3/N_7_K_3_option_2_sigma_3.0_rho_0.6`), (`N_7_K_3/N_7_K_3_multi_option_1`, `N_7_K_3/N_7_K_3_multi_option_2`), and `N_24_K_24_multi_xdawn_eeg`, respectively. For single- and multi-channel naive simulation scenarios, only aggregated `inference_summary` and `prediction_summary` are stored. For real-data-based multi-channel scenario, a `iter_0` and `prediction_summary` across 100 replications are stored.
+* For simulation studies, we provide part of information for naive single-, multi-channel, and real-data-based scenarios under (`N_7_K_3/N_7_K_3_option_1_sigma_3.0_rho_0.6`, `N_7_K_3/N_7_K_3_option_2_sigma_3.0_rho_0.6`), (`N_7_K_3/N_7_K_3_multi_option_1`, `N_7_K_3/N_7_K_3_multi_option_2`), and `N_24_K_24_multi_xdawn_eeg`, respectively.
+  * For single- and multi-channel naive simulation scenarios, only aggregated `inference_summary` and `prediction_summary` are stored.
+  * For real-data-based multi-channel scenario, a `iter_0` with sample datasets and `prediction_summary` across 100 replications are stored.
 
-
+## Software Environment
+* Python Version is 3.7 on local desktop and 3.11 on the institutional server. Relevant packages include numpy (1.21.6), scipy (1.7.3), seaborn (0.12.1), matplotlib (3.5.3), os, tqdm (4.64.1), jax (0.3.25), numpyro (0.10.1), sklearn (1.0.2), pyriemann (0.5), mne (1.3.1), and json (4.17.3).
+* MATLAB Version R2022b or newer. No particular toolboxes are required to download.
+* R Version 4.2.2 (2022-10-31) with platform: x86_64-apple-darwin17.0 (64-bit). Relevant R packages using `sessionInfo()` include
+  * attached base packages: `stats`, `graphics`, `grDevices`, `utils`, `datasets`, `methods`, and `base`
+  * other attached packages: `gridExtra_2.3`, `ggplot2_3.5.1`, and `R.matlab_3.7.0`
+  * loaded via a namespace (and not attached): `fansi_1.0.3`, `ithr_2.5.0`, `dplyr_1.1.4`, `utf8_1.2.2`       
+ `R.methodsS3_1.8.2`, `grid_4.2.2`, `R6_2.5.1`, `lifecycle_1.0.3`, `gtable_0.3.1`, `magrittr_2.0.3`,
+ `scales_1.3.0`, `pillar_1.9.0`, `rlang_1.1.3`, `cli_3.6.2`, `R.utils_2.12.2`, `R.oo_1.25.0`,
+ `generics_0.1.3`, `vctrs_0.6.5`, `tools_4.2.2`, `glue_1.6.2`, `munsell_0.5.0`, `compiler_4.2.2`,
+ `pkgconfig_2.0.3`, `colorspace_2.0-3`, `tidyselect_1.2.0`, and `tibble_3.2.1`.  
 
