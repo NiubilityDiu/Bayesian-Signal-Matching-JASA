@@ -52,8 +52,8 @@ All relevant data are saved under `EEG_MATLAB_data` folder. This folder further 
 * Python Version is 3.7 on local desktop and 3.11 on the institutional server. Relevant packages include numpy (1.21.6), scipy (1.7.3), seaborn (0.12.1), matplotlib (3.5.3), os, tqdm (4.64.1), jax (0.3.25), numpyro (0.10.1), sklearn (1.0.2), pyriemann (0.5), mne (1.3.1), and json (4.17.3).
 * MATLAB Version R2022b or newer. No particular toolboxes are required to download.
 * R Version 4.2.2 (2022-10-31) with platform: x86_64-apple-darwin17.0 (64-bit). Relevant R packages using `sessionInfo()` include
-  * attached base packages: `stats`, `graphics`, `grDevices`, `utils`, `datasets`, `methods`, and `base`
-  * other attached packages: `gridExtra_2.3`, `ggplot2_3.5.1`, and `R.matlab_3.7.0`
+  * attached base packages: `stats`, `graphics`, `grDevices`, `utils`, `datasets`, `methods`, and `base`.
+  * other attached packages: `gridExtra_2.3`, `ggplot2_3.5.1`, and `R.matlab_3.7.0`.
   * loaded via a namespace (and not attached): `fansi_1.0.3`, `ithr_2.5.0`, `dplyr_1.1.4`, `utf8_1.2.2`       
  `R.methodsS3_1.8.2`, `grid_4.2.2`, `R6_2.5.1`, `lifecycle_1.0.3`, `gtable_0.3.1`, `magrittr_2.0.3`,
  `scales_1.3.0`, `pillar_1.9.0`, `rlang_1.1.3`, `cli_3.6.2`, `R.utils_2.12.2`, `R.oo_1.25.0`,
