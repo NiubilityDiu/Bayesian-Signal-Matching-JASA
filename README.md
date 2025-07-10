@@ -44,7 +44,7 @@ All relevant data are saved under `EEG_MATLAB_data` folder. This folder further 
     * `MDWM` (MDWM),
     * `swLDA` (swLDA).
   * Under `FRT_files`, there are two subfolders, `K151` and `Prediction`. The former one stores session-specific (`001_BCI_FRT`, `002_BCI_FRT`, `003_BCI_FRT`) prediction accuracy using each method, while the latter one stores the prediction accuracy combining sessions of all eight participants with neuromuscular diseases and brain injuries (shown in Figure 6).
-* For simulation studies, we provide part of information for naive single-, multi-channel, and real-data-based scenarios under (`N_7_K_3/N_7_K_3_option_1_sigma_3.0_rho_0.6`, `N_7_K_3/N_7_K_3_option_2_sigma_3.0_rho_0.6`), (`N_7_K_3/N_7_K_3_multi_option_1`, `N_7_K_3/N_7_K_3_multi_option_2`), and `N_24_K_24_multi_xdawn_eeg`, respectively.
+* For simulation studies, we provide minimally replicable amount of information for naive single-, multi-channel, and real-data-based scenarios under (`N_7_K_3/N_7_K_3_option_1_sigma_3.0_rho_0.6`, `N_7_K_3/N_7_K_3_option_2_sigma_3.0_rho_0.6`), (`N_7_K_3/N_7_K_3_multi_option_1`, `N_7_K_3/N_7_K_3_multi_option_2`), and `N_24_K_24_multi_xdawn_eeg`, respectively.
   * For single- and multi-channel naive simulation scenarios, only aggregated `inference_summary` and `prediction_summary` are stored.
   * For real-data-based multi-channel scenario, a particular replication `iter_0` with sample datasets and `prediction_summary` across 100 replications are stored.
 
