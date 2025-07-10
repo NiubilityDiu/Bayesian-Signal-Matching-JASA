@@ -50,7 +50,7 @@ All relevant data are saved under `EEG_MATLAB_data` folder. This folder further 
 
 ## Software Environment
 * Python Version is 3.7 on local desktop and 3.11 on the institutional server.
-  * PyCharm 2024.02.01 is used to locally run Python codes.
+  * PyCharm 2024.02.01 is used to locally run Python codes. If you have an educational email address, you can download it for free [here](https://www.jetbrains.com/pycharm/).
   * Relevant packages include `numpy (1.21.6)`, `scipy (1.7.3)`, `seaborn (0.12.1)`, `matplotlib (3.5.3)`, `os`, `tqdm (4.64.1)`, `jax (0.3.25)`, `numpyro (0.10.1)`, `sklearn (1.0.2)`, `pyriemann (0.5)`, `mne (1.3.1)`, and `json (4.17.3)`.
 * MATLAB Version R2022b or newer. No particular toolboxes are required to download.
 * R Version 4.2.2 (2022-10-31) with platform: x86_64-apple-darwin17.0 (64-bit). Relevant R packages using `sessionInfo()` include
