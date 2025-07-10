@@ -8,10 +8,10 @@ Blinded during peering review.
 This github repository contains the code and relevant outputs to reproduce key findings presented in the paper "Bayesian Signal Matching for Transfer Learning in ERP-Based Brain Computer Interface." The reproduction focuses on the real-data based simulation studies and the real data analysis, including Figure 3, Figure 5, Table 2 in the main text and Figure S7 in the supplementary material.
 
 ## Workflow
-
-Go to Python folder and open the following two jupyter notebooks:
-* [SIM_multi_24_demo.ipynb](https://github.com/NiubilityDiu/Bayesian-Signal-Matching-JASA/blob/main/Python/SIM_multi_24_demo.ipynb)
-* [EEG_multi_24_demo.ipynb](https://github.com/NiubilityDiu/Bayesian-Signal-Matching-JASA/blob/main/Python/EEG_multi_24_demo.ipynb)
+* Download the entire repository to your local desktop and rename "BSM-Code-V2."
+* Go to Python folder and open the following two jupyter notebooks:
+  * [SIM_multi_24_demo.ipynb](https://github.com/NiubilityDiu/Bayesian-Signal-Matching-JASA/blob/main/Python/SIM_multi_24_demo.ipynb)
+  * [EEG_multi_24_demo.ipynb](https://github.com/NiubilityDiu/Bayesian-Signal-Matching-JASA/blob/main/Python/EEG_multi_24_demo.ipynb)
 
 ## Repository Structure
 ### Code
