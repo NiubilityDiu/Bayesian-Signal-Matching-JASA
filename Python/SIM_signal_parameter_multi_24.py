@@ -1,7 +1,8 @@
 from self_py_fun.SimGenFun import *
 plt.style.use("bmh")
 
-parent_path_sim_dir  = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+# parent_path_sim_dir  = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+parent_data_sim_dir = sys.argv[1]
 parent_data_dir = '{}/EEG_MATLAB_data/SIM_files'.format(parent_path_sim_dir)
 
 E = 2
