@@ -12,6 +12,11 @@ This github repository contains the code and relevant outputs to reproduce key f
 * Go to Python folder and open the following two jupyter notebooks:
   * [SIM_multi_24_demo.ipynb](https://github.com/NiubilityDiu/Bayesian-Signal-Matching-JASA/blob/main/Python/SIM_multi_24_demo.ipynb)
   * [EEG_multi_24_demo.ipynb](https://github.com/NiubilityDiu/Bayesian-Signal-Matching-JASA/blob/main/Python/EEG_multi_24_demo.ipynb)
+ 
+## Computational Intensity
+* If the audience does not have free jupyter notebook built, it will take about 10 minutes to set up the virtual environment.
+* For simulation studies, it takes 2h 30 minutes to run the entire jupyter notebook. The most time-consuming section is to run MCMC for the BSM method. It takes about 1h per chain, while we have two chains. If the audience wants to skip that step, a built-in MCMC object has been stored. The remaining code section is computational efficient.
+* For real data analysis, it takes about 10 minutes to run the entire jupyter notebook.
 
 ## Repository Structure
 ### Code
