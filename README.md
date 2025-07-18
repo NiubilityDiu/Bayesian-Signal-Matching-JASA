@@ -51,7 +51,7 @@ All relevant data are saved under `EEG_MATLAB_data` folder. This folder further 
 ## Software Environment
 * Python Version is 3.7 on local desktop and 3.11 on the institutional server.
   * PyCharm 2024.02.01 is used to locally run Python codes. If you have an educational email address, you can download it for free [here](https://www.jetbrains.com/pycharm/).
-   * It seems that Pycharm Education does not support jupyter notebook for free. Please establish a virtual environment under the `Python` folder.
+   * It seems that Pycharm Education does not support jupyter notebook for free. Since the venv folder is too large, please establish a virtual environment under the `Python` folder.
      * A sample linux command file can be found [here](https://github.com/NiubilityDiu/Bayesian-Signal-Matching-JASA/blob/main/linux_command_to_run_jupiter_notebook.txt). 
   * Relevant packages include `jax (0.4.13)`, `jaxlib (0.4.13)`, `json (0.12.0)`, `matplotlib (3.7.5)`, `mne (1.6.1)`, `notebook (7.3.3)`, `numpy (1.24.4)`, `numpyro (0.12.1)`, `pyriemann (0.6)`, `scikit-learn (1.3.2)`, `scipy (1.10.1)`, `seaborn (0.13.2)`, and `tqdm (4.67.1)`.
 * MATLAB Version R2022b or newer. No particular toolboxes are required to download.
