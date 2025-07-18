@@ -598,7 +598,7 @@ def numpyro_data_multi_reference_signal_sim_wrap_up(
 
     # save mcmc_dict
     mcmc_iter_dict_dir = '{}/mcmc_sub_{}_seq_size_{}_reference.mat'.format(scenario_name_dir, sub_n, seq_size)
-    sio.savemat(mcmc_iter_dict_dir, mcmc_iter_dict)
+    sio.savemat(mcmc_iter_dict_dir, mcmc_iter_dict, format='4')
 
 
     # save mcmc summary using sys.stdout

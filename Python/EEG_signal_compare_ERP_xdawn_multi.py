@@ -8,10 +8,11 @@ plt.style.use("bmh")
 
 select_channel_ids = np.arange(E_total)
 select_channel_ids, E_sub, select_channel_ids_str = output_channel_ids(select_channel_ids)
-sensitivity_bool = True
+sensitivity_bool = (sys.argv[2] == 'T') or (sys.argv[2] == 'True')
 z_threshold = 0.10
 
-parent_path_eeg_local = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+# parent_path_eeg_local = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+parent_path_eeg_local = sys.argv[1]
 parent_data_dir = '{}/EEG_MATLAB_data/TRN_files'.format(parent_path_eeg_local)
 
 if E_sub == 16:

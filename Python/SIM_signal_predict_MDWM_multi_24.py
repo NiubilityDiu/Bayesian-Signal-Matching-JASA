@@ -9,7 +9,8 @@ E = 2
 tol = 1e-3
 domain_tradeoff = 0.5
 
-parent_path_sim_dir = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+# parent_path_sim_dir = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+parent_path_sim_dir = sys.argv[1]
 parent_data_dir = '{}/EEG_MATLAB_data/SIM_files'.format(parent_path_sim_dir)
 iter_num = 0
 N_total = 24
@@ -65,7 +66,7 @@ signal_test = np.reshape(signal_test, [target_num_test * seq_num_test * rcp_unit
 
 # vary the training seq size
 for seq_i in np.array([1,2,3,4]):
-    print(seq_i + 1)
+    print('Training sequence size = {}'.format(seq_i + 1))
     # train mdwm:
     mdwm_obj, mdwm_ERP_cov_obj, X_domain_mdwm_size, mdwm_param_dict = mdwm_fit_from_sim_feature(
         sim_data_dict, 'subject_0', source_sub_name_ls, domain_tradeoff, tol, seq_size_train=seq_i+1

@@ -5,7 +5,8 @@ import scipy.io as sio
 
 E = 2
 decision_rule_ls = ['NewOnly', 'Mixture']
-parent_path_sim_dir  = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+# parent_path_sim_dir  = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+parent_path_sim_dir = sys.argv[1]
 parent_data_dir = '{}/EEG_MATLAB_data/SIM_files'.format(parent_path_sim_dir)
 
 iter_num = 0

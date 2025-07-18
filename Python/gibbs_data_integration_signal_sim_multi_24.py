@@ -9,13 +9,15 @@ plot_gibbs_bool = True
 matrix_normal_bool = True
 xdawn_bool, letter_dim_sub = False, target_char_size
 
-parent_path_sim_dir  = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+# parent_path_sim_dir  = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+parent_path_sim_dir = sys.argv[1]
 parent_data_dir = '{}/EEG_MATLAB_data/SIM_files'.format(parent_path_sim_dir)
 
 iter_num = 0
 N_total = 24
 K = 24
 seq_i = 4
+print('training sequence size = {}'.format(seq_i + 1))
 
 seq_size_ls = [seq_source_size for i in range(N_total)]
 scenario_name = 'N_{}_K_{}_multi_xdawn_eeg'.format(N_total, K)
