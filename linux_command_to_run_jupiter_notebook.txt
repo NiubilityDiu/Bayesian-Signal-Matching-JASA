@@ -1,8 +1,9 @@
-# The following code helps you create a virtual environment to load relevant python packages and open the Jupyter notebook. Make sure you have valid python installed prior to running the code.
+# The following code helps you create a virtual environment "venv" to load relevant python packages and open the Jupyter notebook. Make sure you have valid python installed prior to running the code.
 # The entire environment set up costs about 10 minutes.
 pwd
 cd "User-specific parent directory"/BSM-Code-V2/Python
 python3 -m venv venv
 source venv/bin/activate
 pip3 install numpy scipy seaborn matplotlib tqdm jax jaxlib numpyro scikit-learn pyriemann mne rpy2 notebook
+# open the jupyter notebook
 jupyter notebook
