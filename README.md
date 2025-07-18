@@ -5,7 +5,7 @@ Blinded during peering review.
 
 ## Overview
 
-This github repository contains the code and relevant outputs to reproduce key findings presented in the paper "Bayesian Signal Matching for Transfer Learning in ERP-Based Brain Computer Interface." The reproduction focuses on the real-data based simulation studies and the real data analysis, including Figure 3, Figure 5, Table 2 in the main text and Figure S7 in the supplementary material.
+This github repository contains the code and relevant outputs to reproduce key findings presented in the paper "Bayesian Signal Matching for Transfer Learning in ERP-Based Brain Computer Interface." The reproduction focuses on the real-data based simulation studies and the real data analysis, including Figures 4-6, Table 2 in the main text as well as Figures S6, S10, S12, and Tables S4, S6 in the supplementary material.
 
 ## Workflow
 * Download the entire repository to your local desktop and rename "BSM-Code-V2."
