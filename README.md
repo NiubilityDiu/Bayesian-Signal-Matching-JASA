@@ -52,9 +52,9 @@ All relevant data are saved under `EEG_MATLAB_data` folder. This folder further 
 * Python Version is 3.7 on local desktop and 3.11 on the institutional server.
   * PyCharm 2024.02.01 is used to locally run Python codes. If you have an educational email address, you can download it for free [here](https://www.jetbrains.com/pycharm/).
    * It seems that Pycharm Education does not support jupyter notebook for free. Please establish a virtual environment under the `Python` folder. 
-  * Relevant packages include `numpy (1.21.6)`, `scipy (1.7.3)`, `seaborn (0.12.1)`, `matplotlib (3.5.3)`, `os`, `tqdm (4.64.1)`, `jax (0.3.25)`, `jaxlib`, `numpyro (0.10.1)`, `scikit-learn (1.0.2)`, `pyriemann (0.5)`, `mne (1.3.1)`, `notebook`, and `json (4.17.3)`.
+  * Relevant packages include `jax (0.4.13)`, `jaxlib (0.4.13)`, `json (0.12.0)`, `matplotlib (3.7.5)`, `mne (1.6.1)`, `notebook (7.3.3)`, `numpy (1.24.4)`, `numpyro (0.12.1)`, `pyriemann (0.6)`, `scikit-learn (1.3.2)`, `scipy (1.10.1)`, `seaborn (0.13.2)`, and `tqdm (4.67.1)`.
 * MATLAB Version R2022b or newer. No particular toolboxes are required to download.
-* R Version 4.2.2 (2022-10-31) with platform: x86_64-apple-darwin17.0 (64-bit). Relevant R packages using `sessionInfo()` include
+* R Version 4.2.2 (2022-10-31) with platform: x86_64-apple-darwin17.0 (64-bit) under macOS 15.5. Relevant R packages using `sessionInfo()` include
   * attached base packages: `stats`, `graphics`, `grDevices`, `utils`, `datasets`, `methods`, and `base`.
   * other attached packages: `gridExtra_2.3`, `ggplot2_3.5.1`, and `R.matlab_3.7.0`.
   * loaded via a namespace (and not attached): `fansi_1.0.3`, `ithr_2.5.0`, `dplyr_1.1.4`, `utf8_1.2.2`       
