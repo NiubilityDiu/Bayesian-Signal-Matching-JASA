@@ -1,12 +1,14 @@
 # evaluate the prediction accuracy of single-channel
-rm(list=ls(all.names=T))
-local_use = T
+# rm(list=ls(all.names=T))
+# local_use = T
+# commandArgs(trailingOnly = TRUE)
 
 library(R.matlab)
 library(ggplot2)
 library(gridExtra)
+library(knitr)
 
-parent_dir = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
+# parent_dir = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
 n_comp = 2
 
 parent_dir_r = file.path(parent_dir, 'R')
@@ -22,7 +24,7 @@ select_channel_ids = 1:16
 select_channel_size = length(select_channel_ids)
 
 sub_new_name = 'K151'
-print(sub_new_name)
+print(paste('Sensitivity check of prediction accuracy on ', sub_new_name, sep=''))
 new_sub_frt_data_dir = file.path(parent_frt_dir, sub_new_name)
 
 sens_name_vec = NULL
@@ -57,5 +59,11 @@ df_target_char_test_size = readRDS(file.path(new_sub_frt_data_dir, 'Prediction',
                                              'K151_target_char_test_size.RDS'))
 target_char_test_sum = sum(df_target_char_test_size)
 predict_iter_test_mean = predict_iter_test_mean / target_char_test_sum
-print('Table S5:')
-print(signif(predict_iter_test_mean * 100, digits=3))
+print('Table S6:')
+predict_iter_test_mean = signif(predict_iter_test_mean * 100, digits=3)
+predict_iter_test_mean = cbind(1:6, predict_iter_test_mean)
+predict_iter_test_mean = rbind(c('s0:target, non-target', rep(c('0.35,0.25', '0.3,0.2', '0.25,0.15'), each=3)),
+                               c('gamma0', rep(c(1.25, 1.2, 1.15), 3)),
+                               predict_iter_test_mean)
+
+print(kable(as.data.frame(predict_iter_test_mean), format = "markdown"))

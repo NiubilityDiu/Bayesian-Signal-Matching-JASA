@@ -1,13 +1,10 @@
 # evaluate the prediction accuracy.
-rm(list=ls(all.names=T))
-local_use = T
+# rm(list=ls(all.names=T))
+# local_use = T
 
 library(R.matlab)
 library(ggplot2)
 library(gridExtra)
-
-
-parent_dir = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
 
 N = 24
 K = 24
@@ -165,7 +162,7 @@ if (record_prediction_bool) {
           legend.background=element_rect(fill='transparent', linewidth=0.2,
                                          color='white', linetype='solid'),
           plot.margin=margin(.2, .2, .2, .2, 'cm'))
-  p_bsm_cluster_z_mean
+  print(p_bsm_cluster_z_mean)
   p_bsm_cluster_z_mean_dir = file.path(
     parent_sim_data_dir_2,
     paste('plot_p_bsm_cluster_z_seq_train_size_2-5_iteration_', iter_total_num, '.png', sep='')
@@ -178,7 +175,7 @@ if (record_prediction_bool) {
   ### produce plots ###
   for (seq_order_id in 1:length(seq_size_vec)) {
     seq_train_iter = seq_size_vec[seq_order_id]
-    print(seq_train_iter)
+    print(paste('Training sequence size = ', seq_train_iter, sep=''))
     
     predict_iter_test_mean = c(
       apply(df_bsm_mixture_test[,seq_order_id,], 1, mean), 
@@ -228,6 +225,7 @@ if (record_prediction_bool) {
             legend.background=element_rect(fill='transparent', linewidth=0.2,
                                            color='white', linetype='solid'),
             plot.margin=margin(.2, .2, .2, .2, 'cm'))
+    print(p_predict_test_iter)
     p_predict_iter_test_dir = file.path(
       parent_sim_data_dir_2,
       paste('plot_predict_test_fix_seq_train_size_', seq_train_iter, '_iteration_', iter_total_num, '.png', sep='')

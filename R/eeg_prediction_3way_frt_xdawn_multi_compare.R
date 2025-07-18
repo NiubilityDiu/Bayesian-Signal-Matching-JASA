@@ -1,13 +1,12 @@
 # evaluate the prediction accuracy of 9 participants
-rm(list=ls(all.names=T))
-local_use = T
+# rm(list=ls(all.names=T))
+# local_use = T
 
 library(R.matlab)
 library(ggplot2)
 library(gridExtra)
 
 
-parent_dir = '/Users/niubilitydiu/Desktop/BSM-Code-V2'
 n_comp = 2
 
 parent_dir_r = file.path(parent_dir, 'R')
